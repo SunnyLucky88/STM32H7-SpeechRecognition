@@ -1,0 +1,38 @@
+#include <complex>
+
+void DFT(std::complex<double> *data, unsigned N){
+	bool error = false;						// error flag
+	std::complex<double> *tmp=NULL;			// Pointer to temporary data
+	int k, n;
+	std::complex<double> wActual;
+	std::complex<double> wStep;
+
+	// get memory for temporary data
+	error = error || (tmp=new complex<double>[N])==NULL;
+
+	// initialise temporary data
+	for(n=0; !error && n<N; n++){
+		tmp[n] = complex<double>(0, 0);
+	}
+
+	// loop over all target values
+	for(n=0; !error && n<N; n++){
+		// actual angle and angle step
+		wActual = complex<double>(1, 0);
+		wStep = complex<double>(cos(-2*pi*n/N), sin(-2*pi*n/N));
+		// loop over all source values
+		for(k=0; k<N; k++) {
+			tmp[n] += data[k]*wActual;
+			wActual *= wStep;
+		}
+	}
+	// copy data
+	for(n=0; !error && n<N; n++){
+		data[n] = tmp[n];
+	}
+	// free memory
+	if(tmp){
+		delete[]tmp;
+	}
+
+}

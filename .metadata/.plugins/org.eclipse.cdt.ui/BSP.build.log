@@ -1,0 +1,12 @@
+13:43:05 **** Incremental Build of configuration STM32H747I_DISCO_CM7 for project BSP ****
+make all 
+arm-none-eabi-g++ "../Example/User/CM7/src/fft.cpp" -mcpu=cortex-m7 -std=gnu++14 -g3 -DUSE_HAL_DRIVER -DSTM32H747xx -DUSE_STM32H747I_DISCO -DCORE_CM7 -DTS_MULTI_TOUCH_SUPPORTED -c -I../../../CM7/inc -I../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../../../Drivers/STM32H7xx_HAL_Driver/Inc -I../../../Drivers/BSP/STM32H747I-DISCO -I../../../Drivers/BSP/Components/Common -I../../../Utilities/lcd -I../../../Utilities/Fonts -I../../../Utilities/CPU -I../../../Middlewares/ST/STM32_Audio/Addons/PDM/Inc -I../../../Drivers/CMSIS/Include -O0 -ffunction-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Example/User/CM7/src/fft.d" -MT"Example/User/CM7/src/fft.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Example/User/CM7/src/fft.o"
+../Example/User/CM7/src/fft.cpp:3:10: fatal error: fft.h: No such file or directory
+    3 | #include "fft.h"
+      |          ^~~~~~~
+compilation terminated.
+make: *** [Example/User/CM7/src/subdir.mk:65: Example/User/CM7/src/fft.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+13:43:05 Build Failed. 2 errors, 0 warnings. (took 678ms)
+
