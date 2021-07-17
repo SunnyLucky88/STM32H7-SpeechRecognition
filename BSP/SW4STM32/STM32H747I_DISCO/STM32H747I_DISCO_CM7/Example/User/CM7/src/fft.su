@@ -1,0 +1,10 @@
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+complex:1228:26:constexpr std::complex<double>::complex(double, double)	32	static
+complex:1357:36:constexpr std::complex<double>::_ComplexT std::complex<double>::__rep() const	16	static
+fft.cpp:9:6:void DFT(std::complex<double>*, uint8_t)	144	static
+fft.cpp:46:6:void FFT(std::complex<double>*, uint8_t)	120	static
+complex:387:5:std::complex<_Tp> std::operator*(const std::complex<_Tp>&, const std::complex<_Tp>&) [with _Tp = double]	32	static
+complex:1325:9:std::complex<double>& std::complex<double>::operator+=(const std::complex<_Tp>&) [with _Tp = double]	24	static
+complex:1341:9:std::complex<double>& std::complex<double>::operator*=(const std::complex<_Tp>&) [with _Tp = double]	56	static
+complex:357:5:std::complex<_Tp> std::operator-(const std::complex<_Tp>&, const std::complex<_Tp>&) [with _Tp = double]	32	static
+complex:1333:9:std::complex<double>& std::complex<double>::operator-=(const std::complex<_Tp>&) [with _Tp = double]	24	static

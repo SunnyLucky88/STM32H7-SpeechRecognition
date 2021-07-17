@@ -1,0 +1,4 @@
+camera.c:73:6:Camera_demo	16	static
+camera.c:209:13:Camera_SetHint	16	static
+camera.c:229:6:BSP_CAMERA_FrameEventCallback	16	static
+camera.c:247:13:LCD_LL_Convert_RGB565ToARGB8888	56	static

@@ -1,0 +1,8 @@
+sdram.c:55:6:SDRAM_demo	8	static
+sdram.c:120:6:SDRAM_DMA_demo	8	static
+sdram.c:197:13:SDRAM_SetHint	24	static
+sdram.c:230:13:SDRAM_DMA_SetHint	24	static
+sdram.c:264:13:Fill_Buffer	48	static,ignoring_inline_asm
+sdram.c:284:16:Buffercmp	40	static,ignoring_inline_asm
+sdram.c:309:6:HAL_SDRAM_DMA_XferCpltCallback	16	static
+sdram.c:320:6:HAL_SDRAM_DMA_XferErrorCallback	16	static

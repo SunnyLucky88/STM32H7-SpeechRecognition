@@ -1,0 +1,10 @@
+sd.c:72:6:SD_DMA_demo	8	static
+sd.c:77:6:SD_IT_demo	8	static
+sd.c:82:6:SD_POLLING_demo	8	static
+sd.c:92:13:SD_demo	48	static,ignoring_inline_asm
+sd.c:240:6:BSP_SD_DetectCallback	24	static
+sd.c:274:13:SD_SetHint	32	static
+sd.c:321:13:Fill_Buffer	48	static,ignoring_inline_asm
+sd.c:342:16:Buffercmp	24	static
+sd.c:362:6:BSP_SD_WriteCpltCallback	16	static
+sd.c:372:6:BSP_SD_ReadCpltCallback	16	static
